@@ -1,15 +1,10 @@
 var buttonCv = document.getElementById('cv-download');
-buttonCv.addEventListener('click', downloadCvPdf);
+buttonCv.addEventListener('click', openCvPdf);
 
-function downloadCvPdf() {
-    var linkCv = document.createElement('a');
-    linkCv.href = './assets/cv.pdf';
-    linkCv.download = 'cv.pdf';
-
-    linkCv.click();
-
-    document.body.removeChild(linkCv)
+function openCvPdf() {
+    window.open('./assets/cv.pdf', '_blank');
 }
+
 
 const form = document.getElementById('contact-form');
 const sendButton = document.getElementById('submit-button');

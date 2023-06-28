@@ -96,7 +96,7 @@
     width: 118px;
     height:118px;
     border: 5px double blanchedalmond;
-    border-radius: 90px;
+    border-radius: 90%;
 }
 
 
@@ -126,11 +126,23 @@
 }
 
 @media (min-width: 1000px) {
+  body {
+    font-size: 1.2em;
+  }
+  .logo {
+    width: 110px;
+    height: 110px;
+}
+
   .toggle-menu {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
   }
+
+  .toggle-menu input[type="checkbox"] {
+    display: none;
+}
 
   .toggle-menu .fa-bars, .toggle-menu .fa-times {
     display: none;
@@ -141,38 +153,71 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    top: 5%;
+    justify-content: flex-end;
   }
 
   .section-link {
     display: flex;
+    flex: 1;
+    text-align: center;
     flex-direction: row;
-    color: blue;
-    width: 4%;
+    justify-content: space-between;
   }
 
-  .section-link a {
-    width: 5%;
-  }
+  /*.section-link a {
+    width: 14%;
+  }*/
   .list-sections {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    padding: 0;
+    list-style: none;
   }
 
   .toggle-menu a {
-    color: inherit;
     text-decoration: none;
-    display: block;
-    padding: 10px 30px;
-    border-bottom: 2px solid rgb(92, 91, 54);
-    width: 14%;
-    background: #e0e0c5;
-    box-shadow: 6px 6px 6px 4px rgb(92, 91, 54);
-    font-size: 1.5em;
+    text-align: center;
+    display:list-item;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 1.2em;
     font-weight: bold;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
+    border-radius: none;
+    position: none;
+    top: 22%;
+    width: 115px;
   }
+
+  .toggle-menu a:hover {
+    background-color: rgba(255, 235, 205, 0.479);
+    text-decoration: underline;
+  }
+
+  .hi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .hi img {
+    width: 250px;
+    height:250px;
+    border: 5px double blanchedalmond;
+    border-radius: 90%;
+}
+
+.img-profile {
+  margin-left: 10%;
+  margin-right: 2.5%;
+}
+
+.hi-text {
+  margin-left: 2.5%;
+  margin-right: 10%;
+}
+
 }
