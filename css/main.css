@@ -36,7 +36,7 @@ main {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color:rgb(92, 91, 54);
+    color: rgb(54, 46, 59);
     cursor: pointer;
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -87,10 +87,10 @@ h2 {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color:rgb(92, 91, 54);
+    color: rgb(54, 46, 59);
     cursor: pointer;
     font-family: 'Chakra Petch', sans-serif;
-    background: rgb(207, 196, 158);
+    background: rgb(227, 207, 238);
     border: 1px solid;
     border-radius: 5px;
     font-family: 'Chakra Petch', sans-serif;
@@ -138,8 +138,9 @@ h2 {
     padding: 2% 2% 2% 2%;
     text-align: center;
     border-radius: 8px;
-    background: #e0e0c5;
-    box-shadow: 10px 5px 5px rgb(92, 91, 54);
+    background: #e4dada7e;
+    box-shadow: 10px 5px 5px rgba(104, 94, 105, 0.301);
+    line-height: normal;
 
 }
 
@@ -147,6 +148,7 @@ h2 {
     width: 80px;
     height: 90px;
     margin-bottom: 3%;
+    padding: 1% 1% 1% 1%;
 }
 
 .academic {
@@ -178,9 +180,9 @@ h2 {
     margin: 2% 2%;
     padding: 2% 2% 2% 2%;
     align-items: center;
-    background: #e0e0c5;
+    background: #e4dada7e;
     text-align: center;
-    box-shadow: 3px 3px 3px 2px rgb(92, 91, 54);
+    box-shadow: 3px 3px 3px 2px rgba(104, 94, 105, 0.301);
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -220,7 +222,7 @@ h2 {
     border-radius: 5px;
     margin-bottom: 2.5%;
     margin-top: 5%;
-    box-shadow: 3px 3px 3px 2px rgb(92, 91, 54);
+    box-shadow: 3px 3px 3px 2px rgba(104, 94, 105, 0.301);
 }
 
 .project-buttons {
@@ -232,11 +234,11 @@ h2 {
     font-size: 1em;
     font-weight:normal;
     cursor: pointer;
-    background: rgb(207, 196, 158);
+    background: rgb(227, 207, 238);
     border: 1px solid;
     border-radius: 5px;
     font-family: 'Chakra Petch', sans-serif;
-    color:rgb(92, 91, 54);
+    color: rgb(54, 46, 59);
     padding: 1% 1% 1% 1%;
 }
 
@@ -277,9 +279,9 @@ h2 {
     margin: 0 0 10px;
     padding: 10px 15px;
     width: 89%;
-    border: 1px solid rgb(92, 91, 54);
+    border: 1px solid rgb(54, 46, 59);
     border-radius: 5px;
-    background-color: rgb(219, 217, 183);;
+    background-color: rgba(234, 230, 235, 0.151);;
 }
 
 .send-container {
@@ -291,16 +293,16 @@ h2 {
     font-size: 1em;
     font-weight:normal;
     cursor: pointer;
-    background: rgb(207, 196, 158);
+    background: rgb(227, 207, 238);
     border: 1px solid;
     border-radius: 5px;
     font-family: 'Chakra Petch', sans-serif;
-    color:rgb(92, 91, 54);
+    color:rgb(54, 46, 59);
     padding: 1% 1% 1% 1%;
 }
 
 .send-button:hover {
-    color: rgb(122, 122, 105) !important;
+    color:rgb(122, 122, 105)!important;
     box-shadow: 0 4px 16px rgb(255, 246, 216);
     transition: all 0.2s ease;
 }
@@ -311,7 +313,7 @@ h2 {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    background-color: rgb(92, 91, 54);
+    background-color:rgb(54, 46, 59);
     color:blanchedalmond;
     margin-bottom: 0;
     margin-top: 5%;
@@ -422,6 +424,11 @@ h2 {
         flex-direction: row;
         justify-content: center;
         gap: 5%;
+        margin-bottom: 3%;
+    }
+
+    #project-portfolio {
+        flex-direction: row-reverse;
     }
 
     .project-image{

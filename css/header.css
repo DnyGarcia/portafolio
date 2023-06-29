@@ -19,17 +19,17 @@
   text-decoration: none;
   display: block;
   padding: 10px 30px;
-  border-bottom: 2px solid rgb(92, 91, 54);
+  border-bottom: 2px solid rgb(115, 117, 111);
   width: 250px;
-  background: #e0e0c5;
-  box-shadow: 6px 6px 6px 4px rgb(92, 91, 54);
+  background: #d1d1c9;
+  box-shadow: 6px 6px 6px 4px rgb(148, 147, 132);
   font-size: 1.5em;
   font-weight: bold;
   border-radius: 5px;
 }
 
 .toggle-menu a:hover {
-  background-color: rgb(219, 205, 183);
+  background-color: rgb(227, 207, 238);
 }
 
 .toggle-menu input[type="checkbox"], .toggle-menu .fa-bars, .toggle-menu .fa-times {
@@ -53,7 +53,7 @@
 }
 
 .toggle-menu {
-  color: rgb(92, 91, 54);
+  color: rgb(54, 46, 59);
   position: relative;
   top: 0;
   right: 0;
@@ -95,7 +95,7 @@
 .hi img {
     width: 118px;
     height:118px;
-    border: 5px double blanchedalmond;
+    border: 5px double rgba(77, 64, 85, 0.192);
     border-radius: 90%;
 }
 
@@ -117,7 +117,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(2px);
+        transform: translateY(3px);
     }
 
     100% {
@@ -193,7 +193,7 @@
   }
 
   .toggle-menu a:hover {
-    background-color: rgba(255, 235, 205, 0.479);
+    background-color: rgba(104, 94, 105, 0.301);
     text-decoration: underline;
   }
 
@@ -206,7 +206,7 @@
   .hi img {
     width: 250px;
     height:250px;
-    border: 5px double blanchedalmond;
+    border: 5px double rgba(77, 64, 85, 0.192);
     border-radius: 90%;
 }
 
