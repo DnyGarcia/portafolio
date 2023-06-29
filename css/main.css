@@ -384,6 +384,33 @@ h2 {
     text-decoration: underline;
 }
 
+@media (min-width: 768px){
+    .social-media-container {
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    .social-media-list {
+        width: 100%;
+    }
+
+    .social-media img {
+        width: 40px;
+        height: 40px;
+        margin-right: 4px;
+    }
+
+    .academic-list {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .academic-item {
+        height: 85%;
+        width: 25%;
+    }
+}
+
 @media (min-width: 1000px) {
     
     .social-media-container {

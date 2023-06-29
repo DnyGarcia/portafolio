@@ -58,6 +58,6 @@ const validateForm = () => {
         form.submit();
         alert("Tú mensaje ha sido enviado, muy pronto me pondré en contacto contigo.");
     }   else    { 
-        alert('form invalid')
+        alert('Formulario no válido')
     }
 }
