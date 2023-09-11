@@ -132,8 +132,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15vh;
-    height: 21vh;
+    width: 32%;
+    height: 44%;
     margin: 2%;
     padding: 2% 2% 2% 2%;
     text-align: center;
@@ -141,12 +141,13 @@ h2 {
     background: #e4dada7e;
     box-shadow: 10px 5px 5px rgba(104, 94, 105, 0.301);
     line-height: normal;
+    box-sizing: border-box;
 
 }
 
 .item img {
-    width: 80px;
-    height: 90px;
+    width: 80%;
+    height: 62%;
     margin-bottom: 3%;
     padding: 1% 1% 1% 1%;
 }
@@ -400,6 +401,16 @@ h2 {
         margin-right: 4px;
     }
 
+    .item {
+        width: 20%;
+        height: 40%;    
+    }
+    
+    .item img {
+        width: 80%;
+        height: 62%;
+    }
+
     .academic-list {
         display: flex;
         flex-direction: row;
@@ -431,6 +442,15 @@ h2 {
     .about-me p {
         width: 85%;
         margin-left: 7.5%;
+    }
+    .item {
+        width: 15%;
+        height: 80%;    
+    }
+    
+    .item img {
+        width: 80%;
+        height: 62%;
     }
 
     .list {

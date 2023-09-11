@@ -1,4 +1,4 @@
-var buttonCv = document.getElementById('cv-download');
+/*var buttonCv = document.getElementById('cv-download');
 buttonCv.addEventListener('click', openCvPdf);
 
 function openCvPdf() {
@@ -60,4 +60,65 @@ const validateForm = () => {
     }   else    { 
         alert('Formulario no válido')
     }
+} */
+
+const inputs = document.querySelectorAll("input");
+
+inputs.forEach( input => {
+    input.addEventListener("blur", (input) => {
+        validate(input.target);
+    });
+});
+
+
+function validate(input) {
+    const inputType = input.dataset.type;  
+    if (input.validity.valid) {
+        input.parentElement.classList.remove("input-container--invalid");
+        input.parentElement.querySelector(".input-message-error").innerHTML = "";
+    } else {
+        input.parentElement.classList.add("input-container--invalid");
+        input.parentElement.querySelector(".input-message-error").innerHTML = mostrarMensajeError(tipoDeInput, input);
+        mostrarMensajeError(tipoDeInput, input);
+    }
+}
+
+
+const errorType = [
+    "valueMissing",
+    "typeMismatch",
+    "patternMismatch",
+    "customError",
+]
+
+const errorMessages = {
+    name: {
+        valueMissing: "El campo nombre no puede estar vacío",
+    },
+    email: {
+        valueMissing: "El campo correo no puede estar vacío",
+        typeMismatch: "El correo no es válido",
+    },
+    phone: {
+        valueMissing: "Este campo no puede estar vacío",
+        patternMismatch: "Se requieren 10 dígitos"
+    },
+    message: {
+        valueMissing: "Este campo no puede estar vacío",
+        patternMismatch: "La ciudad debe contener entre 4 y 30 caracteres",
+    },   
+};
+
+
+function showError(InputType, input) {
+    let errorMessage = "";
+    errorType.forEach((error) => {
+        if(input.validity[error]) {
+            console.log(InputType, error);
+            console.log(input.validity[error]);
+            console.log(errorMessages[InputType][error]);
+            errorMessage= errorMessages[InputType][error];
+        }
+    })
+    return errorMessage;
 }
